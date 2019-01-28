@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{09D3DF42-1028-4399-9E39-659018390717}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RB</RootNamespace>
+    <AssemblyName>RB</AssemblyName>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PX.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=3b136cac2f602b8e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Site\PX.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=3b136cac2f602b8e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Site\PX.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RapidByte\CountryMaint.cs" />
+    <Compile Include="RapidByte\CustomerMaint.cs" />
+    <Compile Include="RapidByte\DAC\Country.cs" />
+    <Compile Include="RapidByte\DAC\Customer.cs" />
+    <Compile Include="RapidByte\DAC\DocTransaction.cs" />
+    <Compile Include="RapidByte\DAC\Document.cs" />
+    <Compile Include="RapidByte\DAC\OrderLine.cs" />
+    <Compile Include="RapidByte\DAC\Product.cs" />
+    <Compile Include="RapidByte\DAC\ProductQty.cs" />
+    <Compile Include="RapidByte\DAC\SalesOrder.cs" />
+    <Compile Include="RapidByte\DAC\Setup.cs" />
+    <Compile Include="RapidByte\DAC\Shipment.cs" />
+    <Compile Include="RapidByte\DAC\ShipmentLine.cs" />
+    <Compile Include="RapidByte\DAC\Supplier.cs" />
+    <Compile Include="RapidByte\DAC\SupplierProduct.cs" />
+    <Compile Include="RapidByte\Descriptor\Attribute.cs" />
+    <Compile Include="RapidByte\ProductMaint.cs" />
+    <Compile Include="RapidByte\ReceiptEntry.cs" />
+    <Compile Include="RapidByte\ReorderProcess.cs" />
+    <Compile Include="RapidByte\SalesOrderEntry.cs" />
+    <Compile Include="RapidByte\SalesOrderInq.cs" />
+    <Compile Include="RapidByte\SalesOrderProcess.cs" />
+    <Compile Include="RapidByte\SetupMaint.cs" />
+    <Compile Include="RapidByte\ShipmentEntry.cs" />
+    <Compile Include="RapidByte\SupplierInq.cs" />
+    <Compile Include="RapidByte\SupplierMaint.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CustomFields.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <!--Fixed SGEN crashes trying to load the System.IO.Compression.FileSystem reference assembly. Can be removed in 4.7.2 -->
+  <Target Name="RemoveDesignTimeFacadesBeforeSGen" BeforeTargets="GenerateSerializationAssemblies">
+    <ItemGroup>
+      <DesignFacadesToFilter Include="System.IO.Compression.ZipFile" />
+      <_FilterOutFromReferencePath Include="@(_DesignTimeFacadeAssemblies_Names->'%(OriginalIdentity)')" Condition="'@(DesignFacadesToFilter)' == '@(_DesignTimeFacadeAssemblies_Names)' and '%(Identity)' != ''" />
+      <ReferencePath Remove="@(_FilterOutFromReferencePath)" />
+    </ItemGroup>
+    <Message Importance="normal" Text="Removing DesignTimeFacades from ReferencePath before running SGen." />
+  </Target>
+  <Target Name="ReAddDesignTimeFacadesBeforeSGen" AfterTargets="GenerateSerializationAssemblies">
+    <ItemGroup>
+      <ReferencePath Include="@(_FilterOutFromReferencePath)" />
+    </ItemGroup>
+    <Message Importance="normal" Text="Adding back DesignTimeFacades from ReferencePath now that SGen has ran." />
+  </Target>
+</Project>
