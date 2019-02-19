@@ -40,6 +40,9 @@
     <Reference Include="Autofac.Extras.CommonServiceLocator">
       <HintPath>..\Site\Autofac.Extras.CommonServiceLocator.dll</HintPath>
     </Reference>
+    <Reference Include="AWSSDK, Version=2.3.33.0, Culture=neutral, PublicKeyToken=9f476d3089b52be3">
+      <HintPath>..\Site\AWSSDK.dll</HintPath>
+    </Reference>
     <Reference Include="FluentAssertions, Version=5.6.0.0, Culture=neutral, PublicKeyToken=33f2691a05b67b6a, processorArchitecture=MSIL">
       <HintPath>..\packages\FluentAssertions.5.6.0\lib\net47\FluentAssertions.dll</HintPath>
     </Reference>
@@ -49,6 +52,12 @@
     <Reference Include="PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=3b136cac2f602b8e, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Site\PX.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="PX.DbServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=3b136cac2f602b8e">
+      <HintPath>..\Site\PX.DbServices.dll</HintPath>
+    </Reference>
+    <Reference Include="PX.Reports, Version=1.0.0.0, Culture=neutral, PublicKeyToken=3b136cac2f602b8e">
+      <HintPath>..\Site\PX.Reports.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
